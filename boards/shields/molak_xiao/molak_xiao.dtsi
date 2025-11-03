@@ -6,7 +6,7 @@
         zmk,physical-layout = &layout_molak_xiao;
     };
 
-    physical_layout0: physical_layout0 {
+    layout_molak_xiao: layout_molak_xiao {
         compatible = "zmk,physical-layout";
         display-name = "MolakXiao";
         kscan = <&kscan0>;

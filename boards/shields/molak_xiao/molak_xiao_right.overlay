@@ -1,4 +1,4 @@
-#include "lily58.dtsi"
+#include "molak_xiao.dtsi"
 
 &default_transform {
     col-offset = <7>;

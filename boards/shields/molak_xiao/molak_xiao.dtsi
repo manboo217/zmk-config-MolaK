@@ -1,10 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include <molak_xiao.dtsi>
-
 / {
     chosen {
-        zephyr,display = &oled;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &layout_molak_xiao;
     };

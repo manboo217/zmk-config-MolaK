@@ -1,4 +1,4 @@
-#include "molak_xiao.dtsi"
+#include "Molak.dtsi"
 
 &kscan0 {
     col-gpios

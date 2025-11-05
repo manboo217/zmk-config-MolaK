@@ -1,4 +1,4 @@
-#include "molak_xiao.dtsi"
+#include "Molak.dtsi"
 
 &default_transform {
     col-offset = <7>;

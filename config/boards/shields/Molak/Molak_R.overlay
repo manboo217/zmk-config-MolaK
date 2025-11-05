@@ -5,13 +5,29 @@
 };
 
 &kscan0 {
-    col-gpios
-        = <&xiao_d 3 GPIO_ACTIVE_HIGH>
-        , <&gpio1  1 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 10 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-        ;
+    compatible = "zmk,kscan-gpio-direct";
+    input-gpios = <&xiao_d 9 GPIO_ACTIVE_LOW>,   // COL3 → ROW0
+                  <&xiao_d 10 GPIO_ACTIVE_LOW>,  // COL2 → ROW0
+                  <&gpio1 1 GPIO_ACTIVE_LOW>,    // COL1 → ROW0
+                  <&gpio0 19 GPIO_ACTIVE_LOW>,   // COL0 → ROW0
+
+                  <&xiao_d 10 GPIO_ACTIVE_HIGH>, // ROW1 → COL2
+                  <&gpio1 1 GPIO_ACTIVE_HIGH>,   // ROW1 → COL1
+                  <&gpio0 19 GPIO_ACTIVE_HIGH>,  // ROW1 → COL0
+
+                  <&xiao_d 10 GPIO_ACTIVE_HIGH>, // ROW2 → COL2
+                  <&gpio1 1 GPIO_ACTIVE_HIGH>,   // ROW2 → COL1
+                  <&gpio0 19 GPIO_ACTIVE_HIGH>,  // ROW2 → COL0
+
+                  <&xiao_d 10 GPIO_ACTIVE_HIGH>, // ROW3 → COL2
+                  <&gpio1 1 GPIO_ACTIVE_HIGH>,   // ROW3 → COL1
+                  <&gpio0 19 GPIO_ACTIVE_HIGH>,  // ROW3 → COL0
+
+                  <&xiao_d 10 GPIO_ACTIVE_HIGH>, // ROW4 → COL2
+                  <&gpio1 1 GPIO_ACTIVE_HIGH>,   // ROW4 → COL1
+                  <&gpio0 19 GPIO_ACTIVE_HIGH>;  // ROW4 → COL0
 };
+
 
 &right_encoder {
     status = "okay";

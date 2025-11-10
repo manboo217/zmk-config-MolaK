@@ -118,6 +118,16 @@
         steps = <24>;
     };
 
+    trackball_central_listener: trackball_central_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>;
+            //<&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+            //<&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
+            //<&zip_temp_layer 5 500>;     
+    };
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;

@@ -76,4 +76,14 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //invert y when scroll
             <&zip_scroll_scaler 1 5>;                           //set scroll scale
     };
+    precise_mover {
+        layers = <6>;  // configure enable layer for PRECISE_MOUSE
+        input-processors = 
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
+            <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
+            <&zip_xy_to_scroll_mapper>,                         //change mode to scroll
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //invert x when scroll
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //invert y when scroll
+            <&zip_scroll_scaler 1 16>;                           //set scroll scale to 1/16
+    };
 };

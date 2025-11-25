@@ -81,6 +81,6 @@
         input-processors = 
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //invert x
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //invert y
-            <&zip_xy_scaler 4>;                                 //reduce mouse movement to 1/16
+            <&zip_xy_scaler 4 1>;                                 //reduce mouse movement to 1/16
     };
 };

@@ -14,10 +14,6 @@ config INPUT
 
 config SPI
     default y
-
-config PMW3610
-    default y
-
 endif
 
 if SHIELD_MOLAK_R || SHIELD_MOLAK_L

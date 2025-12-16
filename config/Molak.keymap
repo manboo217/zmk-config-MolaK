@@ -38,11 +38,11 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESC         &kp N1    &kp N2  &kp N3  &kp N4   &kp N5                               &kp N6     &kp N7   &kp N8     &kp N9   &kp N0       &kp DELETE
-&kp TAB         &kp Q     &kp W   &kp E   &kp R    &lt 5 T                              &kp Y      &kp U    &kp I      &kp O    &kp P        &kp BSPC
-&kp CAPS        &kp A     &kp S   &kp D   &kp F    &lt 6 G        &mo 2        &mo 1      &kp H      &lt 8 J  &kp K      &kp L    &kp SEMI     &kp ENTER
-&kp LEFT_SHIFT  &kp Z     &kp X   &kp C   &lt 1 V  &lt 2 B      &kp SPACE    &kp RWIN   &lt 4 N    &kp M    &kp COMMA  &kp DOT  &kp FSLH     &kp RIGHT_SHIFT
-&kp LCTL        &kp LALT                                        &lt 5 SPACE  &lt 5 ENTER &mkp LCLK &mkp RCLK                    &kp JP_BSLH  &kp RIGHT_ALT
+&kp ESC         &kp N1    &kp N2  &kp N3  &kp N4   &kp N5                                &kp N6     &kp N7   &kp N8     &kp N9   &kp N0       &kp DELETE
+&kp TAB         &kp Q     &kp W   &kp E   &kp R    &lt 5 T                               &kp Y      &kp U    &kp I      &kp O    &kp P        &kp BSPC
+&kp CAPS        &kp A     &kp S   &kp D   &kp F    &lt 6 G      &mo 2        &mo 1       &kp H      &lt 8 J  &kp K      &kp L    &kp SEMI     &kp ENTER
+&kp LEFT_SHIFT  &kp Z     &kp X   &kp C   &lt 1 V  &lt 2 B      &kp SPACE    &kp RWIN    &lt 4 N    &kp M    &kp COMMA  &kp DOT  &kp FSLH     &kp RIGHT_SHIFT
+&kp LCTL        &kp LALT                           &lt 5 SPACE  &lt 5 ENTER &mkp LCLK    &mkp RCLK                               &kp JP_BSLH  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -133,12 +133,12 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans     &trans        &trans         &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans     &trans        &trans         &trans                  &trans  &trans     &trans     &trans    &trans  &trans
+&trans  &trans  &trans     &trans        &trans         &trans                  &trans  &trans     &mkp LCLK  &mkp RCLK &trans  &trans
 &trans  &trans  &kp PG_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans                  &trans  &trans     &mkp LCLK  &mkp RCLK &trans  &trans
-&trans  &trans  &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans  &trans  &trans  &trans     &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans &trans
-&trans  &trans  &trans     &trans        &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans                                          &trans  &trans  &trans  &trans                                &trans  &trans
+&trans  &trans  &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans &trans
+&trans  &trans  &trans     &trans        &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans  &trans
+&trans  &trans                                          &trans  &trans  &trans  &trans                                  &trans  &trans
             >;
         };
     };

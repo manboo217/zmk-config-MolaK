@@ -3,3 +3,6 @@ config SHIELD_MOLAK_R
 
 config SHIELD_MOLAK_L
     def_bool $(shields_list_contains,Molak_L)
+
+config SHIELD_MOLAK_Dongle
+    def_bool $(shields_list_contains,Molak_Dongle)

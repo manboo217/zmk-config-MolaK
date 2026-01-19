@@ -22,10 +22,13 @@ endif
 
 if SHIELD_MOLAK_R || SHIELD_MOLAK_L || SHIELD_MOLAK_DONGLE
 
-config NFCT_PINS_AS_GPIOS
-    default y
-
 config ZMK_SPLIT
+    default y
+endif
+
+if SHIELD_MOLAK_R || SHIELD_MOLAK_L
+
+config NFCT_PINS_AS_GPIOS
     default y
 
 config ZMK_POINTING

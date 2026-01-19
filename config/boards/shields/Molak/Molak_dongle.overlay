@@ -5,7 +5,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &default_layer;
+        zmk,physical-layout = &Molak_physical_layout;
     };
     
     default_transform: keymap_transform_0 {

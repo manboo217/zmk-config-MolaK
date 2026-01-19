@@ -1,13 +1,10 @@
-if SHIELD_HSHS52_DONGLE
+if SHIELD_MOLAK_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
     default "Molak"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-config ZMK_SPLIT
     default y
 
 # Set this to the number of peripherals your dongle will have.

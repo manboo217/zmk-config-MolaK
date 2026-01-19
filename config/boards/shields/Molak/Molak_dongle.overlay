@@ -1,11 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "sweep_esb_addr.dtsi"
-#include "ferris.dtsi"
+#include "Molak_esb_addr.dtsi"
+#include "Molak.dtsi"
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &sweep_layout;
+        zmk,physical-layout = &default_layer;
     };
     
     default_transform: keymap_transform_0 {

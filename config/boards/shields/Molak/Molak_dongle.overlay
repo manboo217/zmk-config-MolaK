@@ -1,14 +1,30 @@
 #include "Molak.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &Molak_physical_layout;  // New item added
     };
 
-    mock_kscan: mock_kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <14>;
+        rows = <5>;
+        map = <
+            RC(5,0) RC(6,0) RC(7,0) RC(0,5) RC(0,6) RC(0,7)                       RC(9,16)  RC(9,15)  RC(9,14)  RC(16,9)  RC(15,9)  RC(14,9)
+            RC(5,1) RC(6,1) RC(7,1) RC(1,5) RC(1,6) RC(1,7)                       RC(10,16) RC(10,15) RC(10,14) RC(16,10) RC(15,10) RC(14,10)
+            RC(5,2) RC(6,2) RC(7,2) RC(2,5) RC(2,6) RC(2,7) RC(7,4)     RC(16,13) RC(11,16) RC(11,15) RC(11,14) RC(16,11) RC(15,11) RC(14,11)
+            RC(5,3) RC(6,3) RC(7,3) RC(3,5) RC(3,6) RC(3,7) RC(3,8)     RC(12,17) RC(12,16) RC(12,15) RC(12,14) RC(16,12) RC(15,12) RC(14,12)
+            RC(5,4) RC(6,4)                         RC(4,8) RC(4,7)     RC(13,16) RC(13,17)                               RC(15,13) RC(14,13)
+        >;
+    };
+};
+
+/ {
+    Molak_physical_layout: Molak_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
     };
 };

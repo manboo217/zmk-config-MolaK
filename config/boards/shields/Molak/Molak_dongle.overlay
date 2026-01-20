@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &Molak_physical_layout;  // New item added
     };
 
     default_transform: keymap_transform_0 {
@@ -18,13 +17,5 @@
             RC(5,3) RC(6,3) RC(7,3) RC(3,5) RC(3,6) RC(3,7) RC(3,8)     RC(12,17) RC(12,16) RC(12,15) RC(12,14) RC(16,12) RC(15,12) RC(14,12)
             RC(5,4) RC(6,4)                         RC(4,8) RC(4,7)     RC(13,16) RC(13,17)                               RC(15,13) RC(14,13)
         >;
-    };
-};
-
-/ {
-    Molak_physical_layout: Molak_physical_layout {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
     };
 };
